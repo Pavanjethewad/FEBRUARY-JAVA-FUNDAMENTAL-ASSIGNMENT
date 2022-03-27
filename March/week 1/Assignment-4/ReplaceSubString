@@ -1,1 +1,17 @@
+package assignment_4;
 
+import java.util.*;
+
+public class ReplaceSubString {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Sentence");  
+		String Sentence = sc.nextLine();
+		System.out.println("Enter Word to be replaced ");   
+		String firstWord = sc.next();
+		System.out.println("Enter second word to replace "+ firstWord);  
+		String secondWord = sc.next();
+		Sentence = Sentence.replaceAll(firstWord, secondWord);
+		System.out.println(Sentence);
+	}
+}
