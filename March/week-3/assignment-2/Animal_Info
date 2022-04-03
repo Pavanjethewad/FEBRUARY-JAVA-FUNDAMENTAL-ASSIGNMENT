@@ -1,1 +1,64 @@
+package oops_assignment;
 
+class Animal{
+class Animal {
+	int legs;
+	String typeOfEater;
+	 public static void eat() {
+		 System.out.println("I eat");
+	 }	 
+	Animal(){
+		this.legs=4;
+		this.typeOfEater="Omnivores";
+	}
+		
+	public Animal(int legs, String typeOfEaters) {
+	this.legs = legs;
+	this.typeOfEater = typeOfEaters;
+	}
+
+	public int getLegs() {
+		return legs;
+	}
+	public void setLegs(int legs) {
+		this.legs = legs;
+	}
+	public String getTypeOfEaters() {
+		return typeOfEater;
+	}
+	public void setTypeOfEaters(String typeOfEaters) {
+		this.typeOfEater = typeOfEaters;
+	}
+	
+	public String toString() {
+		return "Animal [legs= " + legs + ", typeOfEater= " + typeOfEater +"]";
+	}	 	 
+}
+
+
+public class AnimalDetails {
+	public static void main(String[] args) {
+		Animal cat=new Animal();
+		System.out.println("cat");
+		System.out.println(cat);
+		System.out.println();
+		
+		System.out.println("dog");
+		Animal dog=new Animal();
+		System.out.println(dog);
+		System.out.println();
+		
+		System.out.println("camel");
+		Animal camel=new Animal();
+		camel.setLegs(4);
+		camel.setTypeOfEaters("Herbivores");
+		System.out.println(camel);
+		System.out.println();
+		
+		System.out.println("Elephant");
+		Animal elephant=new Animal(4,"herbivores");
+        System.out.println(elephant);
+	}
+}
+
+}
